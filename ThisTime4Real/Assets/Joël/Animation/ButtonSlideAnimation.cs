@@ -6,11 +6,6 @@ public class ButtonSlideAnimation : MonoBehaviour
 {
     public Animator anim;
     public bool opend;
-    public void Start()
-    {
-        anim = GetComponent<Animator>();
-    }
-
     public void CheckIfOpen()
     {
         if (opend)

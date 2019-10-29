@@ -31,8 +31,6 @@ public class EnemyBase : MonoBehaviour
     {
         health = maxHealth;
         moveSpeed = maxMoveSpeed;
-        //anime = GetComponent<Animator>();
-        //anime.speed = UIManager.gameSpeed;
         p = GameObject.FindGameObjectWithTag("Manager").GetComponent<PoisonManager>();
         p.enemies.Add(gameObject);
     }

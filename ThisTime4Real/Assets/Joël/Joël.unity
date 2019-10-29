@@ -620,11 +620,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3036199705126399336, guid: 4c79d1f3ae35a7149a0c98c9f0854d6a,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3036199706439949801, guid: 4c79d1f3ae35a7149a0c98c9f0854d6a,
         type: 3}
       propertyPath: m_AnchorMin.y
@@ -1014,15 +1009,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 572900387}
-    - target: {fileID: 3036199706597400988, guid: 4c79d1f3ae35a7149a0c98c9f0854d6a,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: StartWave
-      objectReference: {fileID: 0}
-    - target: {fileID: 286360058, guid: 4c79d1f3ae35a7149a0c98c9f0854d6a, type: 3}
-      propertyPath: myLayerMask.m_Bits
-      value: 1280
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c79d1f3ae35a7149a0c98c9f0854d6a, type: 3}
 --- !u!1001 &466794488
@@ -2323,6 +2309,28 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpawnManager
       objectReference: {fileID: 0}
+    - target: {fileID: 3548769017494175080, guid: 1b798ca14bf65cc4787aa582da535398,
+        type: 3}
+      propertyPath: waves.Array.data[0].spawns.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3548769017494175080, guid: 1b798ca14bf65cc4787aa582da535398,
+        type: 3}
+      propertyPath: waves.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3548769017494175080, guid: 1b798ca14bf65cc4787aa582da535398,
+        type: 3}
+      propertyPath: waves.Array.data[0].spawns.Array.data[1].entity
+      value: 
+      objectReference: {fileID: 3684590212921141091, guid: 240641cc9080a014e96fdeacf80a0529,
+        type: 3}
+    - target: {fileID: 3548769017494175080, guid: 1b798ca14bf65cc4787aa582da535398,
+        type: 3}
+      propertyPath: waves.Array.data[0].spawns.Array.data[0].entity
+      value: 
+      objectReference: {fileID: 7925704405968013709, guid: 5d0063e5ffebc7547b0a220be842a73b,
+        type: 3}
     - target: {fileID: 3548769017494175081, guid: 1b798ca14bf65cc4787aa582da535398,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5272,7 +5280,7 @@ PrefabInstance:
     - target: {fileID: 4342747631643150868, guid: 2946db25f38137b468bebf91d2d23a86,
         type: 3}
       propertyPath: timeOfDeath
-      value: 0.5
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2946db25f38137b468bebf91d2d23a86, type: 3}

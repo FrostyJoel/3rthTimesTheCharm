@@ -38,6 +38,8 @@ public class EnemyMovement : EnemyBase
                 {
                     if (tempWaypoint != null)
                     {
+                        ResetAnime();
+                        anime.SetTrigger("isWalking");
                         transform.position = Vector3.MoveTowards(transform.position, currentPath.position, step);
                         transform.rotation = Quaternion.Slerp(transform.rotation, rotation, step);
                     }
@@ -48,6 +50,8 @@ public class EnemyMovement : EnemyBase
                 }
                 else
                 {
+                    ResetAnime();
+                    anime.SetTrigger("isWalking");
                     transform.position = Vector3.MoveTowards(transform.position, currentPath.position, step);
                     transform.rotation = Quaternion.Slerp(transform.rotation, rotation, step);
                 }
@@ -82,8 +86,8 @@ public class EnemyMovement : EnemyBase
 
     public void Attack(Collider enemy)
     {
-        //ResetAnime();
-        //anime.SetTrigger("isAttacking");
+        ResetAnime();
+        anime.SetTrigger("isAttacking");
         if (enemy.tag == "Ally")
         {
             enemy.GetComponent<AllyAttack>().health -= damage;
@@ -95,7 +99,7 @@ public class EnemyMovement : EnemyBase
         }
         if (bomber)
         {
-            Destroy(gameObject);
+            health = 0;
         }
         AttackTimer = maxAttackTimer;
     }

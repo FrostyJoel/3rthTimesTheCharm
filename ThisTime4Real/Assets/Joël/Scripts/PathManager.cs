@@ -23,9 +23,9 @@ public class PathManager : MonoBehaviour
     public void CreateGrid()
     {
         grid = new GridTile[x_Length, z_Length];
-        for (int i = 0; i<x_Length; i++)
+        for (int i = 0; i < x_Length; i++)
         {
-            for (int j = 0; j<z_Length; j++)
+            for (int j = 0; j < z_Length; j++)
             {
                 gridTile.x_pos = i;
                 gridTile.z_pos = j;
@@ -39,14 +39,10 @@ public class PathManager : MonoBehaviour
     {
         foreach (GameObject enemy in man.enemies)
         {
-            if(enemy.GetComponent<EnemyMovement>().walkingPath.Count == 0)
+            if (enemy.GetComponent<EnemyMovement>().walkingPath.Count == 0)
             {
                 enemy.GetComponent<EnemyMovement>().walkingPath = path.path;
             }
         }
-    }
-    public void EnemySearch()
-    {
-        
     }
 }
