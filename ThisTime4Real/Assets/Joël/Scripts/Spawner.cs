@@ -53,8 +53,7 @@ public class Spawner : MonoBehaviour
     }
 
     IEnumerator Spawn(GameObject enemy, int maxAmount)
-    {
-        Debug.Log("Yeet");
+    { 
         bool spawning = true;
         int amount = 0;
         while (spawning)

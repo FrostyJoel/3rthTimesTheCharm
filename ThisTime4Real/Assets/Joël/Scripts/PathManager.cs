@@ -29,7 +29,7 @@ public class PathManager : MonoBehaviour
             {
                 gridTile.x_pos = i;
                 gridTile.z_pos = j;
-                grid[i, j] = Instantiate(gridTile, new Vector3(i, 1.5f, j), gridTile.transform.rotation);
+                grid[i, j] = Instantiate(gridTile, new Vector3(i, 0.75f, j), gridTile.transform.rotation);
                 gridList.Add(gridTile);
             }
         }

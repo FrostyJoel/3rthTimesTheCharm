@@ -94,7 +94,7 @@ public class EnemyMovement : EnemyBase
         }
         if (enemy.tag == "Base")
         {
-            enemy.GetComponent<Base>().health -= damage;
+            enemy.GetComponent<Base>().health -= baseDamage;
             health = 0;
         }
         if (bomber)

@@ -14,6 +14,7 @@ public class EnemyBase : MonoBehaviour
     public int money = 5;
 
     public float damage = 2;
+    public float baseDamage = 2;
     public float AttackTimer, maxAttackTimer = 5f;
 
     public bool tickDamage = false;
