@@ -10,6 +10,7 @@ public class EnemyBase : MonoBehaviour
     public bool bomber;
 
     public float health, maxHealth = 5f;
+    public float timeOfDeath;
     public bool alive = true;
     public int money = 5;
 

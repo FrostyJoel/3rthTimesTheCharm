@@ -1168,7 +1168,7 @@ GameObject:
   - component: {fileID: 9163082862620734584}
   m_Layer: 9
   m_Name: BabyBoomer
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1254,6 +1254,7 @@ MonoBehaviour:
   bomber: 1
   health: 0
   maxHealth: 10
+  timeOfDeath: 0.5
   alive: 1
   money: 5
   damage: 2
