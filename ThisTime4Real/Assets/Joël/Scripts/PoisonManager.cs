@@ -6,6 +6,7 @@ using UnityEngine;
 public class PoisonManager : MonoBehaviour
 {
     public List<GameObject> enemies = new List<GameObject>();
+    public float timeOfDeath;
     public UIManager ui;
     public GameObject homebase;
 
@@ -54,7 +55,6 @@ public class PoisonManager : MonoBehaviour
             EnemyDeath death = enemy.GetComponent<EnemyDeath>();
             if (testEnemy.health <= 0)
             {
-                testEnemy.healthImage.canvas.gameObject.SetActive(false);
                 ui.totalMoney += testEnemy.money;
                 if(death.spawn != null)
                 {
@@ -68,7 +68,7 @@ public class PoisonManager : MonoBehaviour
                 enemy.GetComponent<Animator>().SetTrigger("isDying");
                 testEnemy.alive = false;
                 enemies.Remove(enemy);
-                Destroy(enemy, testEnemy.timeOfDeath);
+                Destroy(enemy, timeOfDeath);
                 break;
             }
         }

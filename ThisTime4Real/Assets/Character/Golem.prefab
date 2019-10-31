@@ -899,7 +899,7 @@ GameObject:
   - component: {fileID: -6716857693709938441}
   m_Layer: 9
   m_Name: Golem
-  m_TagString: Enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -966,7 +966,6 @@ MonoBehaviour:
   bomber: 0
   health: 0
   maxHealth: 20
-  timeOfDeath: 2
   alive: 1
   money: 5
   damage: 2

@@ -39,8 +39,8 @@ public class Spawner : MonoBehaviour
             if(UIManager.gameSpeed > 0)
             {
                 int backUpWave = wave;
-                time = roundtime;
                 wave++;
+                time = roundtime;
                 ui.UpdateWave(backUpWave,waves.Count+1);
                 for (int j = 0; j < waves[backUpWave].spawns.Count; j++)
                 {
