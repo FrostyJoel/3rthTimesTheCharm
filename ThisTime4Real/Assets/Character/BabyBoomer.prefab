@@ -1251,9 +1251,9 @@ MonoBehaviour:
   moveSpeed: 0
   maxMoveSpeed: 5
   flying: 0
-  bomber: 0
+  bomber: 1
   health: 0
-  maxHealth: 5
+  maxHealth: 10
   alive: 1
   money: 5
   damage: 2

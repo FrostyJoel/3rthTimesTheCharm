@@ -99,6 +99,7 @@ public class EnemyMovement : EnemyBase
         }
         if (bomber)
         {
+            //Play.(Particlesname)
             health = 0;
         }
         AttackTimer = maxAttackTimer;

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
@@ -109,9 +110,13 @@ public class UIManager : MonoBehaviour
         }
     }
 
-    public void UpdateWave(int wave)
+    public void UpdateWave(int wave, int maxWave)
     {
         waveAmount.text = "Wave: " + wave.ToString();
+        if (wave >= maxWave)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
+        }
     }
 
     public void UpdateBase(float health)

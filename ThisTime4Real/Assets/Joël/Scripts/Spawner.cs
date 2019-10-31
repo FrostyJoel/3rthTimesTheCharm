@@ -24,7 +24,6 @@ public class Spawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        ui.UpdateWave(wave);
         spawnLocation = gm.startingPos.transform;
     }
 
@@ -42,7 +41,7 @@ public class Spawner : MonoBehaviour
                 int backUpWave = wave;
                 wave++;
                 time = roundtime;
-                ui.UpdateWave(backUpWave);
+                ui.UpdateWave(backUpWave,waves.Count+1);
                 for (int j = 0; j < waves[backUpWave].spawns.Count; j++)
                 {
                     StartCoroutine(Spawn(waves[backUpWave].spawns[j].entity, waves[backUpWave].spawns[j].amount));
